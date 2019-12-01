@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoice</title>
+	<style type="text/css">
+		body {
+			font-family: 'open.Sans',sans-serif;
+			margin: 0;
+		}
+		.header {
+			text-align: center;
+		    color: #ffffff;
+		    font-size: 15px;
+		    background-color: #5876dc;
+		    padding: 16px;
+		    font-weight: bold;
+		}
+		.brand-logo-area {
+			display: flex;
+			justify-content: center;
+		}
+		.brand-logo-area img {
+			width: 148px;
+		}
+		.main-content {
+			padding: 10px;
+			position: relative;
+		}
+		.background {
+			position: absolute;
+		    width: 100%;
+		    height: 92vh;
+		    top: 0px;
+		    left: 0px;
+		    display: flex;
+		    align-items: center;
+		    opacity: 0.2;
+		    justify-content: center;
+		    z-index: -1;
+		}
+		.company-name {
+			text-align: center;
+			margin-top: -14px;
+    		margin-bottom: 40px;
+		}
+		table {
+			width: 100%;
+		}
+		th {
+			text-align: left;
+		}
+		th, td {
+			padding: 10px;
+		}
+		table, th, td {
+			border: 1px solid #222222;
+			border-collapse: collapse;
+		}
+		.total-bill {
+			text-align: right;
+			padding-right: 20px;
+		}
+		@media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+@page { margin: 0; }        }
+	</style>
+</head>
+<body>
+	<div class="header"><span>SALE INVOICE</span></div>
+
+	<div class="main-content">
+<div class="brand-logo-area">
+			<img src="images/logo.jpg">
+		</div>		<h4 class="company-name">Sarwar & Son's Pure Lake Water</h4>
+		<p>Sold to <b>Bank of Punjab</b> on <b>2019-09-01</b><br/>Bill Number : <b>876</b></p>
+
+		<table>
+			<tr>
+				<th>Volume</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Sub Total</th>
+			</tr><tr><td>500 ml~A1</td><td>58</td><td>20</td><td>1160</td></tr><tr><td></td><td></td><td></td><td><b>1160</b></td></tr></table><label style='text-align: right; margin-top: 10px; display: block;'><b>Amount Recieved = 1081, Remaining Amount = 79</b></label><div class="background">
+" +
+"			<img src="images/background.jpg">
+" +
+"		</div></div>
+
+	<script type="text/javascript">
+		print();
+	</script>
+</body>
+</html>
